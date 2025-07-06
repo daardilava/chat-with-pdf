@@ -4,7 +4,7 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBD1Wr3p8VUGFaYrQ4XKkExtT-gapEjbug",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "chat-with-pdf-f6c96.firebaseapp.com",
   projectId: "chat-with-pdf-f6c96",
   storageBucket: "chat-with-pdf-f6c96.firebasestorage.app",
