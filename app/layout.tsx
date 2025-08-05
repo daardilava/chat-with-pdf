@@ -1,4 +1,5 @@
 import { ClerkProvider } from '@clerk/nextjs'
+import { Toaster } from 'sonner';
 import './globals.css'
 
 export default function RootLayout({
@@ -10,6 +11,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang='en' suppressHydrationWarning>
         <body className="min-h-screen h-screen overflow-hidden flex flex-col">
+          <Toaster />
           {children}
         </body>
       </html>

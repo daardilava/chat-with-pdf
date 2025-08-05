@@ -5,9 +5,12 @@ import {useDropzone} from 'react-dropzone'
 import { CheckCircleIcon, CircleArrowDown, HammerIcon, RocketIcon, SaveIcon } from 'lucide-react'
 import useUpload, { StatusText } from '@/hooks/useUpload';
 import { useRouter } from 'next/navigation';
+import useSubscription from '@/hooks/useSubscription';
+import { Toaster, toast } from 'sonner'
 
 function FileUploader() {
   const { progress, status, fileId, handleUpload } = useUpload();
+  const { isOverFileLimit, filesLoading } = useSubscription();
   const router = useRouter();
 
   useEffect(() => {
@@ -21,12 +24,21 @@ function FileUploader() {
     
     const file = acceptedFiles[0];
     if (file) {
-      await handleUpload(file);
+      if (!isOverFileLimit && !filesLoading) {
+        await handleUpload(file);
+      } else {
+        toast.error("Free plan file limit reached", {
+          description:
+            "You have reached the maximun number of files allowed for your account. Please upgrade to add more documents.",
+        });
+      }
+      
     } else {
       //do nothing...
       //toast...
     }
-  }, []);
+  }, [handleUpload, isOverFileLimit, filesLoading, toast]
+);
 
   const { getRootProps, getInputProps, isDragActive, isFocused, isDragAccept } = 
     useDropzone({
@@ -68,10 +80,10 @@ function FileUploader() {
                 border-4 ${progress === 100 && "hidden"}`}
                 role = "progressbar"
                 style={{
-                  ["--value" as any]: progress,
-                  ["--size" as any]: "12rem",
-                  ["--thickness" as any]: "1.3rem",
-                }}
+                  "--value": progress,
+                  "--size": "12rem",
+                  "--thickness": "1.3rem",
+                } as React.CSSProperties}
               >
                 {progress} %
               </div>
