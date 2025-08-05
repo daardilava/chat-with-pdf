@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📄 Chat With PDF
+Chat With PDF is an innovative application that transforms your static PDF documents into interactive conversational partners. Simply upload a PDF and start asking questions, get instant summaries, and find the information you need through a user-friendly chat interface.
 
-## Getting Started
+✨ Features
+🤖 Interactive PDF Chat: Engage in a natural language conversation with your PDF documents.
 
-First, run the development server:
+📝 Document Summarization: Obtain concise summaries of your PDFs with a single click.
 
-```bash
+🚀 Easy to Use: A simple and intuitive interface ensures a seamless user experience.
+
+🔒 Secure & Private: Your documents are processed securely, and your privacy is our priority.
+
+🌐 Built with Next.js: A modern, performant, and scalable web application.
+
+Demo
+https://chat-with-pdf-dun-psi.vercel.app/
+
+![Chat with PDF main chat](image.png)
+
+🛠️ Tech Stack
+Framework: Next.js
+
+Styling: Tailwind CSS
+
+Font: Geist
+
+🚀 Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+Ensure you have the following installed on your system:
+
+Node.js (v14 or later)
+
+npm or Yarn
+
+Installation
+Clone the repository:
+
+Bash
+
+git clone https://github.com/daardilava/chat-with-pdf.git
+Navigate to the project directory:
+
+Bash
+
+cd chat-with-pdf
+Install the dependencies:
+
+Bash
+
+npm install
+# or
+yarn install
+Usage
+Start the development server:
+
+Bash
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser:
+Navigate to http://localhost:3000 to view the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Upload a PDF and start your conversation!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🚢 Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check out our Next.js deployment documentation for more details.
 
-## Learn More
+🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-To learn more about Next.js, take a look at the following resources:
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fork the Project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
 
-## Deploy on Vercel
+Commit your Changes (git commit -m 'Add some AmazingFeature')
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Push to the Branch (git push origin feature/AmazingFeature)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open a Pull Request
+
+📜 License
+Distributed under the MIT License. See LICENSE for more information.
