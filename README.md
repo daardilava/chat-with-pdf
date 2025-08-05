@@ -27,9 +27,11 @@ Styling: Tailwind CSS
 Font: Geist
 
 🚀 Getting Started
+
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites
+
 Ensure you have the following installed on your system:
 
 Node.js (v14 or later)
@@ -37,6 +39,7 @@ Node.js (v14 or later)
 npm or Yarn
 
 Installation
+
 Clone the repository:
 
 Bash
@@ -68,11 +71,13 @@ Navigate to http://localhost:3000 to view the application.
 Upload a PDF and start your conversation!
 
 🚢 Deploy on Vercel
+
 The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
 Check out our Next.js deployment documentation for more details.
 
 🤝 Contributing
+
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
@@ -88,4 +93,5 @@ Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 📜 License
+
 Distributed under the MIT License. See LICENSE for more information.
