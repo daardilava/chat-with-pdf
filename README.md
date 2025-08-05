@@ -1,7 +1,9 @@
 📄 Chat With PDF
+
 Chat With PDF is an innovative application that transforms your static PDF documents into interactive conversational partners. Simply upload a PDF and start asking questions, get instant summaries, and find the information you need through a user-friendly chat interface.
 
 ✨ Features
+
 🤖 Interactive PDF Chat: Engage in a natural language conversation with your PDF documents.
 
 📝 Document Summarization: Obtain concise summaries of your PDFs with a single click.
